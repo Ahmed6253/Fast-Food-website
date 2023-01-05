@@ -1,0 +1,350 @@
+*{
+    
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+   font-family: 'Mitr', sans-serif;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   background-color: var(--3-color);
+}
+
+:root{
+    --1-color:#d25244;
+    --2-color:#F8B945;
+    --3-color:#954E35;
+}
+
+.container{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header{
+    background-color: var(--2-color);
+    width: 100%;
+    border-radius:0 0 40% 30%;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto ;
+}
+
+
+.logo .logotext{
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 10px;
+    color: var(--1-color);
+    padding-left: 10px;
+}
+
+nav ul{
+    width: 95px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    text-align: center;
+}
+
+nav ul a:hover{
+    margin:10px 10px;
+    width: 100px;
+    height: fit-content;
+}
+
+nav ul .hom{
+    text-decoration: none;
+    color: wheat;
+    background-color: #954E35;
+    border-radius: 500px 500px 10px 10px;
+    padding: 5px 10px;
+    transition:.3s;
+}
+nav ul .men{
+    text-decoration: none;
+    color: wheat;
+    background-color:#D25244;
+    border-radius: 10px;
+    padding:0 5px;
+    transition:.3s;
+}
+nav ul .bra{
+    text-decoration: none;
+    color: wheat;
+    background-color: #3d170a;
+    border-radius: 10px;
+    padding: 5px;
+    transition:.3s;
+}
+nav ul .con{
+    text-decoration: none;
+    color: wheat;
+    background-color: #954E35;
+    border-radius: 5px 5px 15px 15px;
+    padding: 5px;
+    transition:.3s;
+}
+
+.home{
+   display: flex;
+   justify-content: center;
+}
+
+.-order-{
+    display: flex;
+    
+    flex-direction: column;
+    max-width: 500px;
+}
+
+.home p{
+    font-size: 55px;
+    font-weight: 600;
+    align-self: center;
+    padding-left: 20px;
+    color: var(--3-color);
+    border-radius: 20px 20px 50px 20px;
+}
+
+.home p span{
+    color: var(--1-color);
+}
+
+.home input{
+    cursor: pointer;
+    align-self: center;
+    margin-top: 20px;
+    width: 200px; 
+    height: 70px;
+    background-color: var(--3-color);
+    color: wheat;
+    font-size: 30px;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px 30px;
+    transition: .3s;
+}
+.home input:hover{
+    background-color: var(--1-color);
+    border-radius: 50px 50px;
+    width: 250px; 
+    height: 80px;
+}
+
+.home img{
+    max-width: auto;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    background-color: var(--3-color);
+}
+
+.menu img{
+    width: 1000px;
+    margin: 0 auto;
+    border-radius: 50px;
+    height: 1300px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.menu h1{
+    color: var(--2-color);
+    font-size: 50px;
+    margin: 50px 0;
+    cursor: pointer;
+}
+.menu h1:hover{
+    color: var(--1-color);
+}
+
+.branches{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    background-color: var(--2-color);
+    border-radius: 10% ;
+    padding-bottom: 100px;
+    margin-top: 50px;
+}
+
+.branches h1{
+    color: var(--1-color);
+    font-size: 50px;
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+.branches h1:hover{
+    color: var(--3-color);
+}
+
+section{
+    width: 100%;
+    padding:0 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+    gap:50px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+section p{
+    background-color: var(--1-color);
+    color: var(--2-color);
+    font-size: 25px;
+    border-radius: 20px;
+    padding: 10px ;
+    margin: 0 auto;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+.contact h1{
+    color: var(--2-color);
+    font-size: 50px;
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+
+.contact section{
+    display: flex;
+    justify-content: center;
+    background-color:var(--2-color);
+    padding: 15px 0;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.contact span{
+    font-size: 20px;
+    align-items: center;
+    color: var(--3-color);
+    font-weight: 500;
+    padding: 5px;
+}
+.contact span a{
+    text-decoration: none;
+    color: var(--3-color);
+}
+.contact span i{
+    padding-right: 10px;
+}
+
+@media (max-width : 1024px){
+    .home p{
+        font-size: 40px;
+        font-weight: 600;
+        align-self: center;
+        padding-left: 20px;
+        color: var(--3-color);
+        border-radius: 20px 20px 50px 20px;
+    }
+}
+
+@media (max-width : 768px){
+    .home p{
+        font-size: 30px;
+        width: 100%;
+        font-weight: 600;
+        text-align: center;
+    }
+    .home img{
+        max-width: 300px;
+    }
+    .menu h1, .contact h1, .branches h1{
+        font-size: 35px;
+    }
+    .home input{
+        cursor: pointer;
+        align-self: center;
+        margin-top: 20px;
+        width: 150px; 
+        height: 70px;
+        background-color: var(--3-color);
+        color: wheat;
+        font-size: 25px;
+        font-weight: 500;
+        border: none;
+        border-radius: 30px 30px;
+        transition: .3s;
+    }
+    .home input:hover{
+        background-color: var(--1-color);
+        border-radius: 50px 50px;
+        width: 200px; 
+        height: 80px;
+    }
+}
+
+@media (min-width:320px) and (max-width:426px){
+    .logo .logotext{
+        font-size: 30px;
+        font-weight: 500;
+        letter-spacing: 10px;
+        color: var(--1-color);
+    }
+    
+    nav ul{
+        width: 60px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        text-align: center;
+    }
+    nav ul a:hover{
+        margin:5px 5px;
+        width: 65px;
+    }
+    nav ul a{
+        font-size: 10px;
+    }
+    .home img{
+        display: none;
+    
+    }
+    .home input{
+        width: 100px; 
+        height: 70px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .menu img{
+        width: 500px;
+        height: 600px;
+    }
+    section p{
+        font-size: 15px;
+    }
+    .contact span{
+        font-size: 10px;
+        font-weight: 500;
+        padding: 5px;
+    }
+
+}
